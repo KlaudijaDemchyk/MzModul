@@ -69,7 +69,8 @@
               <div class="content">
                 <div class="field">
                     <p class="control has-icons-left has-icons-right">
-                      <input class="input" type="email" placeholder="Email">
+                        <form name="myform">
+                      <input class="input" id="name" type="name" placeholder="Name">
                       <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                       </span>
@@ -80,13 +81,15 @@
                   </div>
                   <div class="field">
                     <p class="control has-icons-left">
-                      <input class="input" type="password" placeholder="Password">
+                      <input class="input" type="password" id ="password" name="password" placeholder="Password">
                       <span class="icon is-small is-left">
                         <i class="fas fa-lock"></i>
                       </span>
                     </p>
-                  </div>  
-                  
+                    <input class="button" id ="button" type="submit" value="Submit input" onclick="checkForm()">
+                  </div>
+                  <div id="form-error"></div>  
+                </form>
               </div>
             </div>
           </div>
@@ -110,7 +113,7 @@
         </div>
       </section>
 
-
+<script src="dist/main.js"></script>
 
    
   
