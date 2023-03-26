@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=document.querySelector('form[name="myform"]');e.addEventListener("submit",(t=>{t.preventDefault(),function(){const e=document.myform.name.value.trim();return t=document.myform.password.value.trim(),!(""===e?(document.getElementById("form-error").innerHTML="Name can't be blank",1):t.length<6&&(document.getElementById("form-error").innerHTML="Password must be at least 6 characters long.",1));var t}()&&e.submit()}))})();
+//# sourceMappingURL=main.js.map
