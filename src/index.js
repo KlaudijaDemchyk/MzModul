@@ -1,4 +1,4 @@
-import {validateForm} from 'kch-checkform/js/Valid-Check-Form';
+import {validateForm} from 'kch-checkform/Valid-Check-Form';
 
 document.getElementById("button").addEventListener("click",checkForm());
     function checkForm() {
