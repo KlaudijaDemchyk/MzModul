@@ -1,14 +1,10 @@
-import {validateForm} from 'kch-checkform/function-valid-form';
+import {checkForm} from 'kch-checkform/function-valid-form';
 
-document.getElementById("button").addEventListener("click",checkForm);
-   export function checkForm() {
-        const nameInput = document.getElementById('name');
-        const passwordInput = document.getElementById('password');
-        if (validateForm(nameInput, passwordInput)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
+const form = document.querySelector('form[name="myform"]');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (checkForm()) {
+    form.submit();
+  }
+});
 
